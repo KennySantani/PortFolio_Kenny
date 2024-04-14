@@ -1,54 +1,137 @@
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  background-color: ghostwhite;
+  
 }
+
 .portfolio-section{
-    height: 400px;
-    width: 100%;
-    border: 2px solid black;
-    background-color: lightgoldenrodyellow;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+ 
 }
+
 .navigation-bar{
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    z-index: 1;
-    
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 1;
 }
+
 .portfolio-section h1{
-    margin-top: 50px;
+  margin-top: 50px;
 }
+
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 .main-container{
-    position: relative;
-    top:50px;
+  position: relative;
+  top: 60px;
+
 }
 .brand{
-    font-size: 25px;
-    font-family: Arial SaddleBrown;
-    font-variant: small-caps;
-    color: SaddleBrown;
-   
+  font-size: 25px;
+  font-family: Arial black;
+  font-variant: small-caps;
+  color:SaddleBrown ;
 }
+
 .navmenu{
-    color: black;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    padding-left: 15px;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding-left: 15px;
 }
+
 .navmenu:hover{
-    text-decoration: underline 2px solid black;
-    text-underline-offset: 6px;
-    
+  text-decoration: underline 2px solid black;
+  text-underline-offset: 6px;
 }
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home{
+  height: 450px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 39%;   
+  background-position: 100% 10%;
+  border: none;
+}
+
+#home-info{
+  position: absolute;
+  top: 20px;
+  width: 400px;
+  height: 300px;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: justify;
+}
+
+.info{
+  font-weight: bolder;
+  color:arial black;
+
+}
+
+.rsmbtn{
+  height: 40px;
+  width: 100px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color:SaddleBrown;
+  color: white;
+  transition-duration: 1s;
+}
+
+.rsmbtn:hover{
+  background-color: white;
+  color: SaddleBrown;
+  border: 3px solid SaddleBrown;
+  transform: scale(1.1);
+}
+
 .tracking-in-expand-fwd {
-	-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
-	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+  -webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 @-webkit-keyframes tracking-in-expand-fwd {
@@ -84,177 +167,195 @@ html{
   }
 }
 
-#home{
-  height: 400px;
-  background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/12/09/1607500149/Girl-coder-580x386.jpg");
-  background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: 90% 20%;
-  border: 2px solid black;
+.designation
+{
+ font-weight: bolder;
+ font-family: Arial black;
+  color:SaddleBrown; 
+  
 }
 
-#home-info{
-    position: absolute;
-    top: 20px;
-    width: 400px;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.info{
-     font-size: 35px;
-    font-weight: bolder;
-    color: black;
-    margin-left: 120px;
-}
-.designation{
-    color: Coral;
-    font-size: 25px;
-    font-weight: bolder;
-
-}
-.myname{
-    font-size: 35px;
-    margin-left: 120px;
-    font-family: Arial SaddleBrown;
-    font-variant: small-caps;
-    color: SaddleBrown;
-   
-
-}
-.rsmbtn{
-    height: 40px;
-    width: 100px;
-    border: none;
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size:15px;
-    font-weight: bolder;
-    background-color: BurlyWood;
-    color: white;
-    margin-left: 160px;
-    transition-duration: 1s;
-}
-.rsmbtn:hover{
-    background-color: white;
-    color: BurlyWood;
-    border: 3px solid BurlyWood;
-    transform: scale(1.1);
-}
 .about-section{
-    height: 500px;
-    width: 100%;
-    background-color: lightgoldenrodyellow;
+height: 500px;
+width: 100%;
+background-color:  ghostwhite;
 }
+
 .aboutmain{
-    height: 500px;
-    width: 100%;
-    display: flex;
-    font-size: 25px;
-    font-family: sans-serif;
-    font-weight: bolder;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bolder;
 }
+
 .aboutmain div{
-    height: 500px;
+  height: 500px;
+  width: 50%;
+
+}
+
+.carrerimage{
+  margin-top: 120px;
+  margin-left: 30px;
+  animation-duration:4s ;
+  animation-name: zoom;
+  width: 430px;
+  animation-iteration-count: 1000;
+  height: 280px;
+}
+@keyframes zoom{
+  100%{
+    transform: scale(1.2);
+    border-radius: 60px;
+  }
+}
+
+.heading{
+  font-family: Arial black;
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 40px;
+  color: saddlebrown;
+  margin-top: 50px;
+}
+
+.carrerobj{padding: 30px}
+
+.carrerinfo{
+  text-align: justify;
+  
+  text-indent: 50px;
+}
+
+#skills{
+  height: 450px;
+  width: 100%;
+  background-color:  ghostwhite;
+
+}
+.tb1{
+  margin-left: 5%;
+
+
+}
+.tb1 tr td{
+  padding: 30px;
+  
+  transition-duration: 1.5s;
+}
+.skills-subheading{
+  color: orangered;
+  font-family:sans-serif ;
+  font-weight: bolder;
+  font-size: 25px;
+  font-variant: small-caps;
+}
+.detailedskills{
+  font-size: 23px;
+  font-weight: bolder;
+  color: rgb(109, 101, 101);
+  line-height:40px ;
+  word-spacing: 3px;
+  margin-top: 20px;
+}
+
+.card-title{
+   
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  align-content: justify;
+  color: saddlebrown;
+}
+.card-title:hover{
+  text-decoration: underline 2px solid black;
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+
+
+#project{
+  height: 900px;
+  width: 100%;
+  padding: 10%;
+  align-items: center; 
+  justify-content: center;
+}
+
+.card-img-top{
+  height: 200px;
+  width: 400px;
+
+}
+.card{
+  height: 550px;
+  width: 400px;
+}
+.project-container{
+padding: 20px;
+margin-top: 10px;
+}
+
+#contact
+{
+    height: 700px;
+    color:SaddleBrown;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 100% 50%;
+
+}
+
+.contact-header
+{
+    margin-top: 60px;
+    color: black;
+    font-size: 40px;
+    text-decoration: 1px black; 
+}
+
+.contact-child 
+{
+    height: 400px;
     width: 50%;
 }
 
-.minion{
-    margin-top: 100px;
-    margin-left: 90px;
-    animation-duration: 4s;
-    animation-name:zoo;
-}
-@keyframes zoo{
-    100%{
-        transform: scale(1.2);
-        border-radius: 60px;
-    }
-}
-.heading{
-    font-family: Arial black;
-    text-align: center;
-    margin: 30px 0px;
-}
-.heading{
-    font-family: Arial black;
-    text-align: center;
-    margin: 30px 0px;
-    font-size: 40px;
-    color:  brown;
-}
-.carrerobj {
-    padding: 30px;
-}
-.carrerinfo{
-    text-align: justify;
-    line-height: 40px;
-    text-indent: 100px;
-    word-spacing: 7px;
-    letter-spacing: 1px;
-}
-#skills{
-    height: 475px;
+.contact-section
+{
+    height: 470px;
     width: 100%;
-    background-color:lightgoldenrodyellow;;
+}
 
+.contact-form
+{
+    padding: 60px;
+    padding-left:70px ;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
 }
-.tbl{
-    margin-left: 5%;
-}
-.tbl tr td{
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px BurlyWood;
-    transition-duration: 1.5s;
-}
-.skills-subheading{
-    color:  black;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 25px;
-    font-variant: small-caps;
-}
-.detailedSkills{
-font-size: 23px;
-font-weight: bolder;
-color:rgb(109, 101, 101);
-line-height: 40px;
-word-spacing: 3px;
-margin-top: 20px;
-}
-.tbl tr td:hover{
-    transform: scale(1.05);
-    border: 1px solid grey;
-}
-# project{
-    height: 660px;
-    width: 100%;
-    padding: 10px;
-}
-.heading{
-    color: brown;
-    font-family: Arial Black;
+
+.footer-info
+{
     text-align: center;
-    margin-top: 20px;
-    font-size: 35;
-}
-.project-card-container{
     padding: 20px;
-    margin-top: 20px;
-} 
-.card-title{
-    color: brown;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bolder;
+    font-size: 20px;
+    color: black;
 }
-.card-title: hover{
-    text-decoration:underline 2px solid brown;
-    text-underline-offset: 5px;
+
+.social-icons {
+    font-size: 36px;
     cursor: pointer;
 }
-#contact{
-    height: 500px;
-    width: 100%;
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+#footer {
+    background-color: #808080;
+    text-align: center;
 }

@@ -1,148 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtxCOr6L53eM83vLBRVmgd8PYlWYf3Qmdw3O8Je5n8A&s.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 	<title>Kenny Portfolio</title>
 </head>
 <body>
+	<!-- Navbar start here -->
 	<div class="navigation-bar">
+		
 		<nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#"><span class="brand tracking-in-expand-fwd"> Kenny </span> </a>
+  <a class="navbar-brand" href="#"><span class="brand tracking-in-expand">Kenny Santani</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home"> <span class="navmenu">Home </span> <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#home"><span class="navmenu">Home</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about"><span class="navmenu">About </span></a>
+        <a class="nav-link" href="#about"><span class="navmenu">About</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#skills"><span class="navmenu">Skills </span></a>
+        <a class="nav-link" href="#skills"><span class="navmenu">Skills</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#projects"><span class="navmenu">Projects </span></a>
+        <a class="nav-link" href="#project"><span class="navmenu">Project</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
       </li>
     </ul>
+  </div>
+</nav>
 	</div>
-  </nav>
-	</div>
-		<! nav bar ends here>
+	<!-- Navbar ends here -->
 
-		<div class="main-container">
-			<section id="home" class="portfolio-section">
-				<span class="info">Hii</span><br>
-				<span class="info">My Name is</span><br>
-				<span class=" myname">Kenny</span><br>
-				<span class="info">I am <span class="designation">Full Stack Developer</span></span><br>
-				<button href="demo.pdf" class="rsmbtn">RESUME</button>
-				</div>
-			</section>
-
-	<section id="about" class="portfolio-section about-section">
-		<div class="aboutmain">
-			<div class="myimage">
-				<img class="minion kenburns-bottom" src="https://cdn2.vectorstock.com/i/1000x1000/25/46/office-workers-cartoon-color-characters-vector-25602546.jpg" height="300" width="500">
-			</div>
-			<div class="carrerobj">
-				<h1 class="heading">ABOUT</h1>
-				<p class="carrerinfo">Seeking to work in a technology driven environment for accepting different challenges in different competition and tackle them through teamwork, energetic attitude and passion of innovation and growth with the organization.</p>
-			</div>
+	<div class="main-container">
+		<section id="home" class="portfolio-section">
+		<div id="home-info">
+			<span class="info">Hi</span><br>
+			<span class="info">My Name is</span><br>
+			<span class="brand myname tracking-in-expand-fwd">Kenny Santani</span><br>
+			<span class="info">I am a <br></span><span class="designation"> Full Stack Developer</span><br>
+			<a href=""> <button class="rsmbtn" >RESUME</button></a>
 		</div>
 	</section>
-
-	<section id="skills" class="portfolio-section">
-		<h1 class="heading">SKILLS</h1>
-			<table class="tb1" height="450px" width="90%" cellspacing="50px">
-				<tr align="center" valign="top">
-		<div class="borderskills">
-				<td width="50%" data-aos="slide-right">
-			<h2 class="skills-subheading">Languages</h2>
-				<p class="detailedSkills">
-					Core Java, C, C++, Python, JavaScript, HTML, CSS, SQL.
-				</p>
-				</td>
-		</div>
-	<div class="borderskills">
-		<td data-aos="slide-left"><h2 class="skills-subheading">API's & Frameworks</h2>
-			<p class="detailedSkills">
-		Collection, Streams API, Spring, Hibernates, Servlets, JDBC, SpringBoot, Spring MVC.
+	<section id="about" class="portfolio-section about-section">
+    <div class="aboutmain">
+    	<div class="myimage">
+    		<img class="carrerimage" src="Kenny_Santani.jpg">
+    	</div>
+    	<div class="carrerobj">
+		<h1 class="heading" >About</h1>
+		<p class="carrerinfo">Seeking to work in a technology driven environment for accepting different challenges in different competition and tackle them through teamwork, energetic attitude and passion of innovation and growth with the organization.
 		</p>
-		</td>
-	</div>
-</tr>
-</tr>
-		<tr align="center" valign="top">
-		<div class="borderskills">
-			<td data-aos="slide-right"><h2 class="skills-subheading">Tools</h2>
-				<p class="detailedSkills">
-					VS Code, Eclipse IDE, Git, Github, Netbeans, MySql workbench, MongoDB.
-				</p>
-			</td>
-		</div>
-	<div class="borderskills">
-			<td data-aos="slide-left"><h2 class="skills-subheading">Operating Systems</h2>
-					<p class="detailedSkills">
-							Windows, Andriod, ios, Linux.
-					</p>
-			</td>
-	</div>
-</tr>
-</table>
-</section>	
-	<section id="projects" class="portfolio-section">
+	</div></div>
+	</section>
+	<section id="skills" class="portfolio-section">
+		<h1 class="heading">Skills</h1>
+		<table class="tb1" height="100%" width="90%" cellspacing="10%">
+			<tr align="Centre" valign="top">
+				<div class="borderskills">
+					<td width=50% data-aos="slide-right">
+						<h2 class="skills-subheading">Languages</h2>
+						<p class="detailedskills">
+							Core Java, C, C++, Python, HTML, CSS, JavaScript, SQL
+						</p>
+					</td>
+				</div>
+				<div class="borderskills">
+					<td data-aos="slide-left">
+						<h2 class="skills-subheading">API's & Frameworks</h2>
+						<p class="detailedskills">
+						Collection, Stream API, REST API, Spring,, JDBC, SpringBoot, JSP, ReactJS</p>
+					</td>
+				</div>
+			</tr>
+		  <tr align="Centre" valign="top">
+		  	<div class="borderskills">
+		  		<td data-aos="slide-right">
+		  			<h2 class="skills-subheading">Tools</h2>
+		  			<p class="detailedskills">
+		  				VS Code, Eclipse, Git, Github, Netbeans, Mysql workbench.
+		  			</p>
+		  		</td>
+		  	</div>
+		  	<div class="borderskills">
+		  		<td data-aos="slide-left">
+		  			<h2 class="skills-subheading">Operating Systems</h2>
+		  			<p class="detailedskills">
+		  				Windows, Android, ios, Linux.
+		  			</p>
+		  		</td>
+		  	</div>
+		  </tr>
+		</table>
+	</section>
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	duration:2000
+    });
+  </script>
+	<section id="project" class="portfolio-section" >
 		<h1 class="heading">Projects</h1>
+		<div class="project-container">
 		<div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+  <div class="col mb-1">
+    <div class="card" data-aos="slide-right">
+      <img src="https://i.ytimg.com/vi/DEqwIKwMM9k/maxresdefault.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Design and Implementation of Smart Agriculture Management System</h5>
+        <p class="card-text" align="justify">The basic aim of this project is an IOT enabled system management for farmers. The farmers require the system which will help them to manage their farm from remote location. IOT enabled system makes the work of farmers easy and it will not be time consuming, the work of farmers on daily basis will be reduced. The farmers will be able to known their farm parameters directly on the mobile application.
+ </p>
       </div>
     </div>
   </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+  <div class="col mb-1">
+    <div class="card" data-aos="slide-left">
+      <img src="https://cdn.hackaday.io/images/4458741562467498625.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Smart Agri-Farma: Cloud - based sensor environment for IoT technology assisted farming</h5>
+        <p class="card-text" align="justify">This project is to manage the raw data of farm and to analyze the collected data from farmers which will help them to manage theirfarm from remote location. IOT enabled system makes the work of farmers easy and it will not be time consuming, the work of farmers on daily basis will be reduced as the data will be accurately analyzed and visualized.</p>
       </div>
     </div>
   </div>
 </div>
+		</div>
 	</section>
-	<section id="contact" class="portfolio-section">
-		<h1>CONTACT</h1>
+	<section id="contact" >
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+		 	            <div class="contact-child contact-form">
+                <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Message</label>
+    <textarea class="form-control" id="exampleInputPassword1"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+            </div>
+         </div>
+    </section>
+	<section id="footer">
+		<h1 id="footerinfo">©2024 Kenny Santani All Rights Reserved</h1>
 	</section>
 	
 
