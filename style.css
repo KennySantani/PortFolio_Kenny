@@ -5,6 +5,11 @@
   
 }
 
+.img{
+  height: 450px;
+  width: 450px;
+}
+
 .portfolio-section{
   height: 500px;
   width: 100%;
